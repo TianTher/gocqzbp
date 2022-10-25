@@ -123,8 +123,7 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/word_count"    // 聊天热词
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/wordle"        // 猜单词
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/ymgal"         // 月幕galgame
-
-	// _ "github.com/FloatTech/ZeroBot-Plugin/plugin/wtf"            // 鬼东西
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/wtf"            // 鬼东西
 
 	//                               ^^^^                               //
 	//                          ^^^^^^^^^^^^^^                          //
@@ -175,14 +174,14 @@ import (
 )
 
 var (
-	nicks  = []string{"ATRI", "atri", "亚托莉", "アトリ"}
+	nicks  = []string{"ATRI", "atri", "亚托莉", "アトリ", "萝卜子", "萝卜", "bot", "机器人"}
 	adana  *string
 	prefix *string
 )
 
 func init() {
 	// 默认昵称
-	adana = flag.String("n", "椛椛", "Set default nickname.")
+	adana = flag.String("n", "亚托莉", "Set default nickname.")
 	prefix = flag.String("p", "/", "Set command prefix.")
 	gocq.InitBase()
 
